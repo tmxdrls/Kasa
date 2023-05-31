@@ -1,4 +1,4 @@
-export const appartmentList = [
+export const apartmentList = [
 	{
 		"id": "c67ab8a7",
 		"title": "Appartement cosy",
