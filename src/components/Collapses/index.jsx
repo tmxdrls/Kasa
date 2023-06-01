@@ -10,11 +10,9 @@ function Collapses({ title, content }) {
   }
 
   return (
-    <article onClick={toggleCollapse}>
-      <button className="buttonCollapses">
-        {title}
-        <FontAwesomeIcon icon={faChevronUp} rotation={isOpen ? 180 : 0} />
-      </button>
+    <article onClick={toggleCollapse} className="bannerCollapse">
+      <button className="buttonCollapses">{title}</button>
+      <FontAwesomeIcon icon={faChevronUp} rotation={isOpen ? 180 : 0} />
       {isOpen && <aside>{content}</aside>}
     </article>
   )
