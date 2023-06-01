@@ -1,13 +1,20 @@
 import Banner from '../../components/Banner'
-import Footer from '../../components/Footer'
+import Collapses from '../../components/Collapses'
+import { collapses } from '../../datas'
 
 function About() {
+  const filteredCollapses = collapses.filter((collapse) => collapse.id > 2)
   return (
-    <div className="About">
+    <main className="About">
       <Banner />
-      <h1>About</h1>
-      <Footer />
-    </div>
+      {filteredCollapses.map((collapse) => (
+        <Collapses
+          key={collapse.id}
+          title={collapse.title}
+          content={collapse.content}
+        />
+      ))}
+    </main>
   )
 }
 
