@@ -12,16 +12,18 @@ nav{
 }
 
 .Navigation{
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: flex-end;
 }
 
 .Navigation a{
-    padding-left: 54px;
     text-decoration: none;
     color: #FF6060;
     font-size: 24px;
+}
+.Navigation a:last-of-type{
+    padding-left: 54px;
 }
 .Navigation a.home,.Navigation a.about,.Navigation a:hover{
     text-decoration: underline;
