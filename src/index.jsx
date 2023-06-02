@@ -7,6 +7,7 @@ import About from './pages/About'
 import Product from './pages/Product'
 import Error from './pages/Error'
 import Footer from './components/Footer'
+import './styles/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

@@ -1,0 +1,27 @@
+nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.navLogo{
+    width: 210px;
+    height: 68px;
+}
+
+.Navigation{
+    width: 25%;
+    display: flex;
+}
+
+.Navigation a{
+    padding-left: 54px;
+    text-decoration: none;
+    color: #FF6060;
+    font-size: 24px;
+}
+.Navigation a.home,.Navigation a.about,.Navigation a:hover{
+    text-decoration: underline;
+}
