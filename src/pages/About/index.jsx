@@ -5,16 +5,18 @@ import { collapses } from '../../datas'
 function About() {
   const filteredCollapses = collapses.filter((collapse) => collapse.id > 2)
   return (
-    <main className="About">
+    <div className="About">
       <Banner />
-      {filteredCollapses.map((collapse) => (
-        <Collapses
-          key={collapse.id}
-          title={collapse.title}
-          content={collapse.content}
-        />
-      ))}
-    </main>
+      <main className="mainAbout">
+        {filteredCollapses.map((collapse) => (
+          <Collapses
+            key={collapse.id}
+            title={collapse.title}
+            content={collapse.content}
+          />
+        ))}
+      </main>
+    </div>
   )
 }
 

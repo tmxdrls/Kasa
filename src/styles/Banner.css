@@ -1,0 +1,28 @@
+header{
+width: 90%;
+height: 223px;
+border-radius: 25px;
+margin: 0 auto 40px;
+}
+
+header.bannerHome{
+    display: flex;
+    justify-content: center;
+    background: url("../assets/header-img.jpg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+header.bannerAbout{
+    background: url("../assets/banner-img.jpg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+header h1{
+    font-size: 48px;
+    color:white;
+    margin: auto;
+}

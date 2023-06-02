@@ -1,11 +1,12 @@
 import { apartmentList } from '../../datas/apartmentList.js'
 import { Link } from 'react-router-dom'
+import '../../styles/ApartmentList.css'
 
 function ApartmentList() {
   return (
-    <main>
+    <main className="mainHome">
       {apartmentList.map((apartment) => (
-        <section key={apartment.id}>
+        <section key={apartment.id} className="apartmentContainer">
           <Link to={`/apartments/${apartment.id}`}>
             <img src={apartment.cover} alt={apartment.title} />
             <h2>{apartment.title}</h2>

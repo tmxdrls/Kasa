@@ -1,0 +1,36 @@
+.mainHome{
+    display: flex;
+    width: 90%;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+.apartmentContainer{
+    width: 30%;
+    height:340px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.apartmentContainer img{
+    width: 100%;
+    height:340px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 0;
+}
+.apartmentContainer h2{
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+    margin: auto;
+    margin-top: -80px;
+    padding:10px ;
+    background-color: #FF6060;
+    position: relative;
+    border-radius: 10px;
+}

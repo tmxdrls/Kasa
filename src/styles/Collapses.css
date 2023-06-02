@@ -1,0 +1,9 @@
+
+.bannerCollapse{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background: #FF6060;
+    border-radius: 5px;
+}

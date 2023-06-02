@@ -3,7 +3,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
+    margin: 50px auto;
 }
 
 .navLogo{
@@ -12,8 +12,9 @@ nav{
 }
 
 .Navigation{
-    width: 25%;
+    width: 30%;
     display: flex;
+    justify-content: flex-end;
 }
 
 .Navigation a{
