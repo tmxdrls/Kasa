@@ -4,6 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
+import '../../styles/Carrousel.css'
 
 function Carrousel({ apartmentList, id }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -41,14 +42,13 @@ function Carrousel({ apartmentList, id }) {
 
   return (
     <section className="Carrousel">
-      <button onClick={previousImage}>
-        <FontAwesomeIcon icon={faChevronLeft} />
+      <button onClick={previousImage} className="btnPrev">
+        <FontAwesomeIcon icon={faChevronLeft} className="iconCarrousel" />
       </button>
       <img src={apartmentImages[currentImageIndex]} alt="Appartement" />
-      <button onClick={nextImage}>
-        <FontAwesomeIcon icon={faChevronRight} />
+      <button onClick={nextImage} className="btnNext">
+        <FontAwesomeIcon icon={faChevronRight} className="iconCarrousel" />
       </button>
-      <p>{`${currentImageIndex + 1} / ${apartmentImages.length}`}</p>
     </section>
   )
 }

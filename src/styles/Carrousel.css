@@ -1,0 +1,33 @@
+.Carrousel{
+    width: 100%;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+}
+
+.Carrousel img{
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+.Carrousel button{
+    background-color: transparent;
+    z-index: 1;  
+    position: relative;     
+}
+.btnPrev{
+    left: 70px;
+}
+
+.btnNext{
+    right: 70px;
+}
+
+.iconCarrousel{
+    width :47px;
+    height : 80px;
+    color: white;
+}
