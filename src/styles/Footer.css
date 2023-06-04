@@ -18,3 +18,12 @@ footer img{
     height: 40px;
     margin: 30px auto;
 }
+@media all and (max-width: 375px){
+    footer{
+        margin-top: 7px;
+    }
+    footer p{
+        font-size: 12px;
+        width: 30%;
+    }
+}

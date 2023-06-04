@@ -35,3 +35,28 @@
     position: relative;
     border-radius: 10px;
 }
+@media all and (max-width: 1350px){
+    
+    .apartmentContainer{
+        width: 45%;
+        margin-bottom: 35px;
+        margin-right: 35px;
+    }
+}
+@media all and (max-width: 830px){
+    
+    .mainHome{
+        background-color: white;
+        padding: 0;
+    }
+    .apartmentContainer{
+        width: 100%;
+        height:255px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .apartmentContainer img{
+        height: 255px;
+    }
+}

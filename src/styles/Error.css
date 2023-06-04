@@ -1,9 +1,7 @@
 .mainError{
 display: flex;
 flex-direction: column;
-justify-content: space-between;
 align-items: center;
-height: 800px;
 padding: 50px;
 }
 
@@ -17,8 +15,34 @@ padding: 50px;
 }
 .mainError p{
     font-size:36px;
+    text-align: center;
+    margin: 140px auto;
 }
 .mainError a{
 font-size:18px;
 text-decoration: underline;
+}
+@media all and (max-width: 800px){
+    .mainError h1{
+        font-size: 168px;
+    }
+    .mainError p{
+        font-size: 28px;
+    }
+}
+@media all and (max-width: 375px){
+    .mainError{
+       justify-content: flex-start;
+    }
+    .mainError h1{
+        font-size: 96px;
+    }
+    .mainError p{
+        font-size:18px;
+        margin: 112px auto;
+    }
+    .mainError a{
+    font-size:14px;
+    margin-bottom: 55px;
+    }
 }

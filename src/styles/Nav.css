@@ -12,9 +12,10 @@ nav{
 }
 
 .Navigation{
-    width: 20%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .Navigation a{
@@ -27,4 +28,27 @@ nav{
 }
 .Navigation a.home,.Navigation a.about,.Navigation a:hover{
     text-decoration: underline;
+}
+@media all and (max-width: 550px){
+    .Navigation a:last-of-type{
+        padding-left: 27px;
+    }
+    .navLogo{
+        height: 47px;
+        width: 145px;
+    }
+    .Navigation a {
+        font-size: 18px;
+    }
+}
+@media all and (max-width: 375px){
+    nav{
+        margin:30px auto;
+    }
+
+    .Navigation a{
+        font-size: 12px;
+        text-transform: uppercase;
+        
+    }
 }

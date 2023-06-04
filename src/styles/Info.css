@@ -19,6 +19,8 @@
 
 .tagContainer{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
     margin-top: 20px;
 }
@@ -28,8 +30,9 @@
     color: white;
     background-color: #FF6060;
     border-radius: 10px;
-    padding:3px 30px;
+    padding:3px 25px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .hostDescription{
@@ -75,3 +78,58 @@
 .Collapses .contentCollapses, .Collapses p{
     font-size: 18px;
 }
+@media all and (max-width: 700px){
+    .apartementDescription h1{
+        font-size: 27px;
+    }
+}
+@media all and (max-width: 375px){
+    .Info{
+        flex-direction: column;
+        margin: 15px auto;
+    }
+    .apartementDescription{
+        width: 100%;
+    }
+    .apartementDescription h1{
+        font-size: 18px;
+    }
+    .apartementDescription h2{
+        font-size: 14px;
+    }
+    .tag{
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    .tagContainer {
+        margin-top: 10px;
+    }
+    .hostDescription {
+        flex-direction: row-reverse;
+        justify-content:space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .star , .emptyStar{
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .hostPicture h2{
+        font-size: 12px;
+        width: 50%;
+    }
+    .hostPicture img{
+        width: 32px;
+        height: 32px;
+    }
+    .Collapses{
+        flex-direction: column;
+    }
+    .Collapses section {
+        width: 100%;
+    }
+    .Collapses .contentCollapses, .Collapses p{
+        font-size: 14px;
+    }
+}
+    
