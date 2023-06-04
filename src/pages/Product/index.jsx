@@ -12,16 +12,15 @@ function Product() {
     <main>
       <Carrousel apartmentList={apartmentList} id={id} />
       <Info id={id} />
-      <section className="Collapses">
+      <article className="Collapses">
         {filteredCollapses.map((collapse) => (
           <Collapses
-            className="productCollapses"
             key={collapse.id}
             title={collapse.title}
             content={collapse.content}
           />
         ))}
-      </section>
+      </article>
     </main>
   )
 }

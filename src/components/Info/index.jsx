@@ -1,5 +1,6 @@
 import { apartmentList } from '../../datas/apartmentList'
 import Error from '../../pages/Error'
+import '../../styles/Info.css'
 
 function Info({ id }) {
   const filteredApartments = apartmentList.filter(
@@ -22,32 +23,32 @@ function Info({ id }) {
     const stars = star.repeat(rating)
     const emptyStars = emptyStar.repeat(5 - rating)
     return (
-      <aside>
+      <div className="hostStar">
         <span className="star">{stars}</span>
         <span className="emptyStar">{emptyStars}</span>
-      </aside>
+      </div>
     )
   }
 
   return (
     <section className="Info">
-      <article>
+      <article className="apartementDescription">
         <h1>{apartment.title}</h1>
         <h2>{apartment.location}</h2>
-        <aside>
+        <aside className="tagContainer">
           {apartment.tags.map((tag, index) => (
-            <aside key={index}>{tag}</aside>
+            <aside key={index} className="tag">
+              {tag}
+            </aside>
           ))}
         </aside>
       </article>
-      <article>
-        <aside>
+      <article className="hostDescription">
+        <aside className="hostPicture">
           <h2>{apartment.host.name}</h2>
           <img src={apartment.host.picture} alt="Icone du propriétaire" />
         </aside>
-        <aside className="containerStar">
-          {generateStars(apartment.rating)}
-        </aside>
+        <aside>{generateStars(apartment.rating)}</aside>
       </article>
     </section>
   )
