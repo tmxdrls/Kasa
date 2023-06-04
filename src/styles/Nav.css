@@ -31,7 +31,7 @@ nav{
 }
 @media all and (max-width: 550px){
     .Navigation a:last-of-type{
-        padding-left: 27px;
+        padding-left: 20px;
     }
     .navLogo{
         height: 47px;
