@@ -34,7 +34,7 @@ function Carrousel({ apartmentList, id }) {
 
   if (apartmentImages.length === 1) {
     return (
-      <div>
+      <div className="soloCarrousel">
         <img src={apartmentImages[0]} alt="Appartement" />
       </div>
     )
