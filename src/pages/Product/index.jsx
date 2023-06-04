@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { collapses } from '../../datas'
+import { collapses } from '../../datas/collaspsesList'
 import { apartmentList } from '../../datas/apartmentList'
 import Info from '../../components/Info'
 import Collapses from '../../components/Collapses'

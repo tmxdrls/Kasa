@@ -1,4 +1,4 @@
-import { apartmentList } from '../../datas/apartmentList.js'
+import { apartmentList } from '../../datas/apartmentList'
 import { Link } from 'react-router-dom'
 import '../../styles/ApartmentList.css'
 

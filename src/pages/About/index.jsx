@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner'
 import Collapses from '../../components/Collapses'
-import { collapses } from '../../datas'
+import { collapses } from '../../datas/collaspsesList'
 
 function About() {
   const filteredCollapses = collapses.filter((collapse) => collapse.id > 2)
