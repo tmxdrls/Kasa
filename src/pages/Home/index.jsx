@@ -8,7 +8,6 @@ function Home() {
   useEffect(() => {
     setlogs(dataLogement.getAll())
   }, [])
-  console.log(logs)
   return (
     <div className="Accueil">
       <Banner />

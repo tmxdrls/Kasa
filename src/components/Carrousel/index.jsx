@@ -28,16 +28,18 @@ function Carrousel({ slides }) {
   } else {
     return (
       <section className="Carrousel">
-        <button onClick={previous} className="btnPrev">
-          <FontAwesomeIcon icon={faChevronLeft} className="iconCarrousel" />
-        </button>
-        <img src={slides[currentImageIndex]} alt="Appartement" />
+        <aside className="carrouselImgContainer">
+          <button onClick={previous} className="btnPrev">
+            <FontAwesomeIcon icon={faChevronLeft} className="iconCarrousel" />
+          </button>
+          <img src={slides[currentImageIndex]} alt="Appartement" />
+          <button onClick={next} className="btnNext">
+            <FontAwesomeIcon icon={faChevronRight} className="iconCarrousel" />
+          </button>
+        </aside>
         <p className="carrouselLoc">
           {currentImageIndex + 1}/{slides.length}
         </p>
-        <button onClick={next} className="btnNext">
-          <FontAwesomeIcon icon={faChevronRight} className="iconCarrousel" />
-        </button>
       </section>
     )
   }

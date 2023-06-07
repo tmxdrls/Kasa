@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import '../../styles/Collapses.css'
 
 function Collapses({ title, content }) {
@@ -20,7 +20,15 @@ function Collapses({ title, content }) {
           rotation={isOpen ? 180 : 0}
         />
       </aside>
-      {isOpen && <aside className="contentCollapses">{content}</aside>}
+      {isOpen && (
+        <aside className="contentCollapses">
+          {Array.isArray(content) ? (
+            content.map((item, index) => <div key={index}>{item}</div>)
+          ) : (
+            <div>{content}</div>
+          )}
+        </aside>
+      )}
     </section>
   )
 }

@@ -1,21 +1,27 @@
 .Carrousel, .soloCarrousel{
-    width: 90%;
-    height: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: auto;
+    flex-wrap: wrap;
+
 }
 
-.Carrousel img ,.soloCarrousel img{
-    width: 100%;
+.carrouselImgContainer ,.soloCarrousel{
+    width: 95%;
     height: 415px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.Carrousel img ,.soloCarrousel img{
+    width: 90%;
+    height: auto;
     object-fit: cover;
     border-radius: 25px;
     z-index: 0;
 }
 
-.Carrousel button{
+.Carrousel button , .carrouselLoc{
     background-color: transparent;
     z-index: 1;  
     position: relative;     
@@ -34,8 +40,15 @@
     color: white;
 }
 
-@media all and (max-width: 375px){
-    .Carrousel img,.soloCarrousel img{
+.carrouselLoc {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    bottom: 35px;
+}
+@media all and (max-width: 620px){
+    .carrouselImgContainer{
         height: 255px;
     }
     .iconCarrousel{
@@ -47,5 +60,8 @@
     }
     .btnNext{
         right: 25px;
+    }
+    .carrouselLoc {
+        display: none;
     }
 }
