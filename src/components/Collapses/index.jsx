@@ -3,7 +3,7 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react'
 import '../../styles/Collapses.css'
 
-function Collapses({ title, content }) {
+function Collapses({ props }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleCollapse = () => {
@@ -13,14 +13,16 @@ function Collapses({ title, content }) {
   return (
     <section onClick={toggleCollapse} className="containerCollapse">
       <aside className="bannerCollapse">
-        <p>{title}</p>
+        <p>{props.title}</p>
         <FontAwesomeIcon
           icon={faChevronUp}
           className="iconCollapse"
           rotation={isOpen ? 180 : 0}
         />
       </aside>
-      {isOpen && <aside className="contentCollapses">{content}</aside>}
+      {isOpen && (
+        <aside className="contentCollapses">{props.description}</aside>
+      )}
     </section>
   )
 }

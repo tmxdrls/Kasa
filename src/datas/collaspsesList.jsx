@@ -1,20 +1,4 @@
-import { apartmentList } from './apartmentList'
-
-export const collapses = [
-  {
-    id: 1,
-    title: 'Description',
-    content: apartmentList[0].description,
-    isOpen: false,
-  },
-  {
-    id: 2,
-    title: 'Equipment',
-    content: apartmentList[0].equipments.map((equipment, index) => (
-      <li key={index}>{equipment}</li>
-    )),
-    isOpen: false,
-  },
+export const collapsesData = [
   {
     id: 3,
     title: 'Fiabilité',

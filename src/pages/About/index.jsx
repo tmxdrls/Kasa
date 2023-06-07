@@ -1,14 +1,13 @@
 import Banner from '../../components/Banner'
 import Collapses from '../../components/Collapses'
-import { collapses } from '../../datas/collaspsesList'
+import { collapsesData } from '../../datas/collaspsesList'
 
 function About() {
-  const filteredCollapses = collapses.filter((collapse) => collapse.id > 2)
   return (
     <div className="About">
       <Banner />
       <main className="mainAbout">
-        {filteredCollapses.map((collapse) => (
+        {collapsesData.map((collapse) => (
           <Collapses
             key={collapse.id}
             title={collapse.title}

@@ -22,7 +22,7 @@
     z-index: 0;
 }
 .apartmentContainer h2{
-    color: black;
+    color: white;
     font-size: 18px;
     text-align: center;
     width: 90%;
@@ -30,7 +30,7 @@
     margin: auto;
     margin-top: -80px;
     padding:10px ;
-    background-color: #FF6060;
+    background-color: rgba(0, 0,0, 0.5);
     position: relative;
     border-radius: 10px;
 }

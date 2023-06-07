@@ -1,19 +1,14 @@
-import { apartmentList } from '../../datas/apartmentList'
 import { Link } from 'react-router-dom'
 import '../../styles/ApartmentList.css'
 
-function ApartmentList() {
+function ApartmentList({ data }) {
   return (
-    <main className="mainHome">
-      {apartmentList.map((apartment) => (
-        <section key={apartment.id} className="apartmentContainer">
-          <Link to={`/apartments/${apartment.id}`}>
-            <img src={apartment.cover} alt={apartment.title} />
-            <h2>{apartment.title}</h2>
-          </Link>
-        </section>
-      ))}
-    </main>
+    <section className="apartmentContainer">
+      <Link to={`/apartments/${data.id}`}>
+        <img src={data.cover} alt={data.title} />
+        <h2>{data.title}</h2>
+      </Link>
+    </section>
   )
 }
 

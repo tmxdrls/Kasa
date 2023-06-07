@@ -1,22 +1,6 @@
-import { apartmentList } from '../../datas/apartmentList'
-import Error from '../../pages/Error'
 import '../../styles/Info.css'
 
 function Info({ id }) {
-  const filteredApartments = apartmentList.filter(
-    (apartment) => apartment.id === id
-  )
-
-  if (filteredApartments.length === 0) {
-    return (
-      <div>
-        <Error />
-      </div>
-    )
-  }
-
-  const apartment = filteredApartments[0]
-
   function generateStars(rating) {
     const star = '★'
     const emptyStar = '☆'
