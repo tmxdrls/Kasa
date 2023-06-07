@@ -11,12 +11,12 @@ function Carrousel({ slides }) {
 
   const previous = () => {
     setCurrentImageIndex(
-      currentImageIndex === 0 ? slides.lenght - 1 : currentImageIndex - 1
+      currentImageIndex === 0 ? slides.length - 1 : currentImageIndex - 1
     )
   }
   const next = () => {
     setCurrentImageIndex(
-      currentImageIndex === slides.lenght - 1 ? 0 : currentImageIndex + 1
+      currentImageIndex === slides.length - 1 ? 0 : currentImageIndex + 1
     )
   }
   if (slides.length === 1) {
@@ -32,6 +32,9 @@ function Carrousel({ slides }) {
           <FontAwesomeIcon icon={faChevronLeft} className="iconCarrousel" />
         </button>
         <img src={slides[currentImageIndex]} alt="Appartement" />
+        <p className="carrouselLoc">
+          {currentImageIndex + 1}/{slides.length}
+        </p>
         <button onClick={next} className="btnNext">
           <FontAwesomeIcon icon={faChevronRight} className="iconCarrousel" />
         </button>

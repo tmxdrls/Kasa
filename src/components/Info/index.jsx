@@ -1,6 +1,6 @@
 import '../../styles/Info.css'
 
-function Info({ id }) {
+function Info({ props }) {
   function generateStars(rating) {
     const star = '★'
     const emptyStar = '☆'
@@ -17,10 +17,10 @@ function Info({ id }) {
   return (
     <section className="Info">
       <article className="apartementDescription">
-        <h1>{apartment.title}</h1>
-        <h2>{apartment.location}</h2>
+        <h1>{props.title}</h1>
+        <h2>{props.location}</h2>
         <aside className="tagContainer">
-          {apartment.tags.map((tag, index) => (
+          {props.tags.map((tag, index) => (
             <aside key={index} className="tag">
               {tag}
             </aside>
@@ -29,10 +29,10 @@ function Info({ id }) {
       </article>
       <article className="hostDescription">
         <aside className="hostPicture">
-          <h2>{apartment.host.name}</h2>
-          <img src={apartment.host.picture} alt="Icone du propriétaire" />
+          <h2>{props.host.name}</h2>
+          <img src={props.host.picture} alt="Icone du propriétaire" />
         </aside>
-        <aside>{generateStars(apartment.rating)}</aside>
+        <aside>{generateStars(props.rating)}</aside>
       </article>
     </section>
   )
