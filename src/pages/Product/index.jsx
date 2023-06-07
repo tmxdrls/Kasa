@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 import { dataLogement } from '../../datas/apartmentsData'
 import Error from '../Error'
 //import Info from '../../components/Info'
-//import Collapses from '../../components/Collapses'
+import Collapses from '../../components/Collapses'
 import Carrousel from '../../components/Carrousel'
 
 function Product() {
@@ -15,7 +15,14 @@ function Product() {
     return (
       <main>
         <Carrousel slides={logement.pictures} />
-        <article className="Collapses"></article>
+        <article className="Collapses">
+          <Collapses title="Description" content={logement.description} />
+          <Collapses
+            title="Équipements"
+            content={logement.equipments}
+            className="collapseEquiments"
+          />
+        </article>
       </main>
     )
   }
