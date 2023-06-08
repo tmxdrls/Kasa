@@ -1,4 +1,4 @@
-.Carrousel, .soloCarrousel{
+.Slider{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -6,14 +6,14 @@
 
 }
 
-.carrouselImgContainer ,.soloCarrousel{
+.sliderImgContainer ,.soloSlider{
     width: 95%;
     height: 415px;
     display: flex;
     justify-content: center;
     margin: auto;
 }
-.Carrousel img ,.soloCarrousel img{
+.Slider img ,.soloSlider img{
     width: 90%;
     height: auto;
     object-fit: cover;
@@ -21,7 +21,7 @@
     z-index: 0;
 }
 
-.Carrousel button , .carrouselLoc{
+.Slider button , .sliderLoc{
     background-color: transparent;
     z-index: 1;  
     position: relative;     
@@ -34,13 +34,13 @@
     right: 70px;
 }
 
-.iconCarrousel{
+.iconSlider{
     width :47px;
     height : 80px;
     color: white;
 }
 
-.carrouselLoc {
+.sliderLoc {
     width: 100%;
     text-align: center;
     font-size: 18px;
@@ -48,10 +48,10 @@
     bottom: 35px;
 }
 @media all and (max-width: 620px){
-    .carrouselImgContainer{
+    .sliderImgContainer{
         height: 255px;
     }
-    .iconCarrousel{
+    .iconSlider{
         width : 12px;
         height : 20px;
     }
@@ -61,7 +61,7 @@
     .btnNext{
         right: 25px;
     }
-    .carrouselLoc {
+    .sliderLoc {
         display: none;
     }
 }

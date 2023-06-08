@@ -16,7 +16,7 @@ function Collapses({ title, content }) {
         <h3>{title}</h3>
         <FontAwesomeIcon
           icon={faChevronUp}
-          className="iconCollapse"
+          className="iconeCollapse"
           rotation={isOpen ? 180 : 0}
         />
       </section>

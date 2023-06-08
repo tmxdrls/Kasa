@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { dataLogement } from '../../datas/apartmentsData'
-import Carrousel from '../../components/Carrousel'
+import Slider from '../../components/Slider'
 import Info from '../../components/Info'
 import Collapses from '../../components/Collapses'
 import Error from '../Error'
@@ -11,7 +11,7 @@ function Product() {
   if (logement) {
     return (
       <main>
-        <Carrousel slides={logement.pictures} />
+        <Slider slides={logement.pictures} />
         <Info props={logement} />
         <article className="Collapses">
           <Collapses title="Description" content={logement.description} />

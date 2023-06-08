@@ -4,9 +4,9 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
-import '../../styles/Carrousel.css'
+import '../../styles/Slider.css'
 
-function Carrousel({ slides }) {
+function Slider({ slides }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const previous = () => {
@@ -21,23 +21,23 @@ function Carrousel({ slides }) {
   }
   if (slides.length === 1) {
     return (
-      <div className="soloCarrousel">
+      <article className="soloSlider">
         <img src={slides[currentImageIndex]} alt="Appartement" />
-      </div>
+      </article>
     )
   } else {
     return (
-      <article className="Carrousel">
-        <section className="carrouselImgContainer">
+      <article className="Slider">
+        <section className="sliderImgContainer">
           <button onClick={previous} className="btnPrev">
-            <FontAwesomeIcon icon={faChevronLeft} className="iconCarrousel" />
+            <FontAwesomeIcon icon={faChevronLeft} className="iconSlider" />
           </button>
           <img src={slides[currentImageIndex]} alt="Appartement" />
           <button onClick={next} className="btnNext">
-            <FontAwesomeIcon icon={faChevronRight} className="iconCarrousel" />
+            <FontAwesomeIcon icon={faChevronRight} className="iconSlider" />
           </button>
         </section>
-        <p className="carrouselLoc">
+        <p className="sliderLoc">
           {currentImageIndex + 1}/{slides.length}
         </p>
       </article>
@@ -45,4 +45,4 @@ function Carrousel({ slides }) {
   }
 }
 
-export default Carrousel
+export default Slider

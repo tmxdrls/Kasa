@@ -16,7 +16,7 @@
     padding: 10px;
 }
 
-.bannerCollapse *{
+.bannerCollapse h3, .iconeCollapse{
     font-size: 24px;
     color: white;
 }
@@ -37,7 +37,7 @@
         margin-bottom: 20px;
     }
 
-    .bannerCollapse *{
+    .bannerCollapse h3, .iconeCollapse{
         font-size: 14px;
     }
     .contentCollapses{

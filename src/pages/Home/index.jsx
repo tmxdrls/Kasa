@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { dataLogement } from '../../datas/apartmentsData'
 import Banner from '../../components/Banner'
-import ApartmentList from '../../components/ApartmentList'
+import Card from '../../components/Card'
 
 function Home() {
   const [logs, setlogs] = useState([])
@@ -13,7 +13,7 @@ function Home() {
       <Banner />
       <main className="mainHome">
         {logs.map((log) => (
-          <ApartmentList key={log.id} data={log} />
+          <Card key={log.id} data={log} />
         ))}
       </main>
     </div>

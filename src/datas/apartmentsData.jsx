@@ -1,4 +1,4 @@
-import Logements from './apartmentList.json'
+import Logements from './apartmentsList.json'
 
 const getAll = () => {
   return Logements

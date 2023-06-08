@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import '../../styles/ApartmentList.css'
+import '../../styles/Card.css'
 
-function ApartmentList({ data }) {
+function Card({ data }) {
   return (
-    <article className="apartmentContainer">
+    <article className="cardContainer">
       <Link to={`/apartments/${data.id}`}>
         <img src={data.cover} alt={data.title} />
         <h2>{data.title}</h2>
@@ -12,4 +12,4 @@ function ApartmentList({ data }) {
   )
 }
 
-export default ApartmentList
+export default Card

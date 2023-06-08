@@ -5,7 +5,7 @@ align-items: center;
 padding: 50px;
 }
 
-.mainError *{
+.mainError, .mainError a {
     color: #FF6060
 }
 
