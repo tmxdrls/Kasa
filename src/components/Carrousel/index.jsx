@@ -27,8 +27,8 @@ function Carrousel({ slides }) {
     )
   } else {
     return (
-      <section className="Carrousel">
-        <aside className="carrouselImgContainer">
+      <article className="Carrousel">
+        <section className="carrouselImgContainer">
           <button onClick={previous} className="btnPrev">
             <FontAwesomeIcon icon={faChevronLeft} className="iconCarrousel" />
           </button>
@@ -36,11 +36,11 @@ function Carrousel({ slides }) {
           <button onClick={next} className="btnNext">
             <FontAwesomeIcon icon={faChevronRight} className="iconCarrousel" />
           </button>
-        </aside>
+        </section>
         <p className="carrouselLoc">
           {currentImageIndex + 1}/{slides.length}
         </p>
-      </section>
+      </article>
     )
   }
 }

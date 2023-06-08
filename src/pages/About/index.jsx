@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner'
-import Collapses from '../../components/Collapses'
 import { collapsesData } from '../../datas/collaspsesList'
+import Collapses from '../../components/Collapses'
 
 function About() {
   return (

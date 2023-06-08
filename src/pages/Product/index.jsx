@@ -1,31 +1,26 @@
 import { useParams } from 'react-router-dom'
 import { dataLogement } from '../../datas/apartmentsData'
-import Error from '../Error'
+import Carrousel from '../../components/Carrousel'
 import Info from '../../components/Info'
 import Collapses from '../../components/Collapses'
-import Carrousel from '../../components/Carrousel'
+import Error from '../Error'
 
 function Product() {
   const { id } = useParams()
   const logement = dataLogement.getOne(id)
-  console.log(logement)
-  if (!logement) {
-    return <Error />
-  } else {
+  if (logement) {
     return (
       <main>
         <Carrousel slides={logement.pictures} />
         <Info props={logement} />
         <article className="Collapses">
           <Collapses title="Description" content={logement.description} />
-          <Collapses
-            title="Équipements"
-            content={logement.equipments}
-            className="collapseEquiments"
-          />
+          <Collapses title="Équipements" content={logement.equipments} />
         </article>
       </main>
     )
+  } else {
+    return <Error />
   }
 }
 

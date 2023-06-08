@@ -11,14 +11,14 @@ function Nav() {
   return (
     <nav>
       <img src={Logo} alt="Logo de Kasa" className="navLogo" />
-      <div className="Navigation">
+      <article className="Navigation">
         <Link to="/" className={activeLink('/') ? 'active' : 'home'}>
           Accueil
         </Link>
         <Link to="/about" className={activeLink('/about') ? 'active' : 'about'}>
           A propos
         </Link>
-      </div>
+      </article>
     </nav>
   )
 }

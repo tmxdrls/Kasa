@@ -11,25 +11,25 @@ function Collapses({ title, content }) {
   }
 
   return (
-    <section onClick={toggleCollapse} className="containerCollapse">
-      <aside className="bannerCollapse">
-        <p>{title}</p>
+    <article onClick={toggleCollapse} className="containerCollapse">
+      <section className="bannerCollapse">
+        <h3>{title}</h3>
         <FontAwesomeIcon
           icon={faChevronUp}
           className="iconCollapse"
           rotation={isOpen ? 180 : 0}
         />
-      </aside>
+      </section>
       {isOpen && (
-        <aside className="contentCollapses">
+        <section className="contentCollapses">
           {Array.isArray(content) ? (
-            content.map((item, index) => <div key={index}>{item}</div>)
+            content.map((item, index) => <aside key={index}>{item}</aside>)
           ) : (
-            <div>{content}</div>
+            <aside>{content}</aside>
           )}
-        </aside>
+        </section>
       )}
-    </section>
+    </article>
   )
 }
 

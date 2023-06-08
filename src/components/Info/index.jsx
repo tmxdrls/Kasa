@@ -7,7 +7,7 @@ function Info({ props }) {
     const stars = star.repeat(rating)
     const emptyStars = emptyStar.repeat(5 - rating)
     return (
-      <div className="hostStar">
+      <div>
         <span className="star">{stars}</span>
         <span className="emptyStar">{emptyStars}</span>
       </div>
@@ -15,8 +15,8 @@ function Info({ props }) {
   }
 
   return (
-    <section className="Info">
-      <article className="apartementDescription">
+    <article className="Info">
+      <section className="apartementDescription">
         <h1>{props.title}</h1>
         <h2>{props.location}</h2>
         <aside className="tagContainer">
@@ -26,15 +26,15 @@ function Info({ props }) {
             </aside>
           ))}
         </aside>
-      </article>
-      <article className="hostDescription">
+      </section>
+      <section className="hostDescription">
         <aside className="hostPicture">
           <h2>{props.host.name}</h2>
           <img src={props.host.picture} alt="Icone du propriétaire" />
         </aside>
-        <aside>{generateStars(props.rating)}</aside>
-      </article>
-    </section>
+        <aside className="hostStar">{generateStars(props.rating)}</aside>
+      </section>
+    </article>
   )
 }
 

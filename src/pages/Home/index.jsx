@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import Banner from '../../components/Banner'
 import { dataLogement } from '../../datas/apartmentsData'
-import ApartmentList from '../../components/ApartementList'
+import Banner from '../../components/Banner'
+import ApartmentList from '../../components/ApartmentList'
 
 function Home() {
   const [logs, setlogs] = useState([])

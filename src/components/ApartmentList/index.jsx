@@ -3,12 +3,12 @@ import '../../styles/ApartmentList.css'
 
 function ApartmentList({ data }) {
   return (
-    <section className="apartmentContainer">
+    <article className="apartmentContainer">
       <Link to={`/apartments/${data.id}`}>
         <img src={data.cover} alt={data.title} />
         <h2>{data.title}</h2>
       </Link>
-    </section>
+    </article>
   )
 }
 
