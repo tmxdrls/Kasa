@@ -13,10 +13,10 @@ function Product() {
       <main>
         <Slider slides={logement.pictures} />
         <Info props={logement} />
-        <article className="Collapses">
+        <div className="Collapses">
           <Collapses title="Description" content={logement.description} />
           <Collapses title="Équipements" content={logement.equipments} />
-        </article>
+        </div>
       </main>
     )
   } else {

@@ -75,7 +75,7 @@
     width: 45%;
 }
 
-.Collapses .contentCollapses, .Collapses h3{
+.Collapses .contentCollapses, .Collapses section h3{
     font-size: 18px;
 }
 @media all and (max-width: 700px){
@@ -125,7 +125,7 @@
     .Collapses{
         flex-direction: column;
     }
-    .Collapses section {
+    .Collapses article {
         width: 100%;
     }
     .Collapses .contentCollapses, .Collapses h3{
