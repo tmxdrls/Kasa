@@ -5,7 +5,7 @@ border-radius: 25px;
 margin: 0 auto 40px;
 }
 
-header.bannerHome{
+header.bannerDefault{
     display: flex;
     justify-content: center;
     background: url("../assets/header-img.jpg");  
@@ -21,13 +21,13 @@ header.bannerAbout{
     background-repeat: no-repeat;  
 }
 
-header h1{
+header p{
     font-size: 48px;
     color:white;
     margin: auto;
 }
 @media all and (max-width: 800px){
-    header h1 {
+    header p {
         font-size: 36px;
     }
 }
@@ -45,7 +45,7 @@ header h1{
     header.bannerAbout{
         height: 223px;
     }
-    header h1 {
+    header p {
         font-size: 24px;
     }
 }
