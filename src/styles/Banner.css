@@ -5,7 +5,7 @@ border-radius: 25px;
 margin: 0 auto 40px;
 }
 
-header.bannerDefault{
+.bannerDefault{
     display: flex;
     justify-content: center;
     background: url("../assets/header-img.jpg");  
@@ -14,7 +14,7 @@ header.bannerDefault{
     background-repeat: no-repeat;  
 }
 
-header.bannerAbout{
+.bannerAbout{
     background: url("../assets/banner-img.jpg");  
     background-size: cover;
     background-position: center;
@@ -42,7 +42,7 @@ header p{
         border-radius: 10px;
         margin: 0 auto 22px;
     }
-    header.bannerAbout{
+   .bannerAbout{
         height: 223px;
     }
     header p {
