@@ -1,13 +1,9 @@
-import { useLocation } from 'react-router-dom'
 import '../../styles/Banner.css'
 
-function Banner() {
-  const location = useLocation()
-  const isAboutPage = location.pathname === '/about'
-
+function Banner({ className, text }) {
   return (
-    <header className={isAboutPage ? 'bannerAbout' : 'bannerDefault'}>
-      {isAboutPage ? null : <p>Chez vous, partout et ailleurs</p>}
+    <header className={className}>
+      <p>{text}</p>
     </header>
   )
 }

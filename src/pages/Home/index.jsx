@@ -10,7 +10,7 @@ function Home() {
   }, [])
   return (
     <div className="Accueil">
-      <Banner />
+      <Banner className="bannerDefault" text="Chez vous, partout et ailleurs" />
       <main className="mainHome">
         {logs.map((log) => (
           <Card key={log.id} data={log} />

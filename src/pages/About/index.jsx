@@ -5,7 +5,7 @@ import Collapses from '../../components/Collapses'
 function About() {
   return (
     <div className="About">
-      <Banner />
+      <Banner className="bannerAbout" />
       <main className="mainAbout">
         {collapsesData.map((collapse) => (
           <Collapses
